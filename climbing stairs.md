@@ -15,24 +15,26 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 3.代码<br>
 ---
 
-（1）int climbStairs(int n) {<br>
-    int result;<br>
-    if (n==1) return 1;<br>
-    else if (n==2) return 2;<br>
-    else {<br>
-        result=climbStairs(n-1)+climbStairs(n-2);<br>
-    }<br>
-    return result;<br>
-    }<br>
-（2）int climbStairs(int n) {<br>
-    int *result=(int*)malloc(sizeof(int)*(n+1));<br>
-    result[1]=1;<br>
-    result[2]=2;<br>
-    for (int i=3; i<=n; i++) {<br>
-        result[i]=result[i-1]+result[i-2];<br>
-    }<br>
-    return result[n];<br>
-}<br>
+```
+（1）int climbStairs(int n) {
+    int result;
+    if (n==1) return 1;
+    else if (n==2) return 2;
+    else {
+        result=climbStairs(n-1)+climbStairs(n-2);
+    }
+    return result;
+    }
+（2）int climbStairs(int n) {
+    int *result=(int*)malloc(sizeof(int)*(n+1));
+    result[1]=1;
+    result[2]=2;
+    for (int i=3; i<=n; i++) {
+        result[i]=result[i-1]+result[i-2];
+    }
+    return result[n];
+}
+```
 
 4.总结<br>
 ---
