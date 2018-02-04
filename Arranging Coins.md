@@ -26,6 +26,7 @@ Because the 3rd row is incomplete, we return 2<br>
 3.代码
 ---
 
+```c<br>
 int arrangeCoins(int n) {<br>
     int sum=1;<br>
     for (int i=1; i>0; i++) {<br>
@@ -36,3 +37,4 @@ int arrangeCoins(int n) {<br>
     }<br>
     return sum-1;<br>
 }<br>
+```
