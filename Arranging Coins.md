@@ -27,14 +27,14 @@ Because the 3rd row is incomplete, we return 2<br>
 ---
 
 ```c<br>
-int arrangeCoins(int n) {<br>
-    int sum=1;<br>
-    for (int i=1; i>0; i++) {<br>
-        if (n>=i) {<br>
-            n=n-i;<br>
-            sum++;}<br>
-        else break;<br>
-    }<br>
-    return sum-1;<br>
-}<br>
+int arrangeCoins(int n) {
+    int sum=1;
+    for (int i=1; i>0; i++) {
+        if (n>=i) {
+            n=n-i;
+            sum++;}
+        else break;
+    }
+    return sum-1;
+}
 ```
