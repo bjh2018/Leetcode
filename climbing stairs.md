@@ -7,7 +7,7 @@ You are climbing a stair case. It takes n steps to reach to the top.<br>
 Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top? <br>
 爬楼梯的时候每次只能爬1阶或2阶，问爬n阶的楼梯，有几种不同的方法？<br>
 
-#2.解决方法<br>
+2.解决方法<br>
 ---
 
 要想知道爬n阶楼梯的方法的数量，就要知道前一步走的是1阶还是2阶，有两种不同的情况，所以用加法，所以爬n阶台阶的方法的数量就等于爬n-1节台阶的方法的种数加<br>上爬n-2节台阶的方法的种数，考虑用递归或者是递推。<br>
