@@ -15,7 +15,6 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 3.代码<br>
 ---
 
-' "<br>
 （1）int climbStairs(int n) {<br>
     int result;<br>
     if (n==1) return 1;<br>
@@ -34,7 +33,6 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
     }<br>
     return result[n];<br>
 }<br>
-' "<br>
 
 4.总结<br>
 ---
