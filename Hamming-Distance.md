@@ -29,6 +29,21 @@ The above arrows point to positions where the corresponding bits are different.<
 -----
 
 ```
+int hammingDistance(int x, int y) {
+    int num=0;
+    int *nx=(int *)malloc(sizeof(int)*32);
+    int *ny=(int *)malloc(sizeof(int)*32);
+        for (int i=0; i<32; i++) {
+            nx[i]=x%2;
+            x=x/2;
+            ny[i]=y%2;
+            y=y/2;
+        }
+    for (int j=0; j<32; j++) {
+        if (nx[j]!=ny[j]) num++;
+    }
+    return num;
+}
 ```
 
 4.总结
