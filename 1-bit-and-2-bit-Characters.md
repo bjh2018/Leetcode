@@ -52,8 +52,8 @@ bool isOneBitCharacter(int* bits, int bitsSize) {
         if (i == (bitsSize - 1))
             return true;
         
-        i = bits[i] ? (i + 2) : (i + 1);
-    }
+        i = bits[i] ? (i + 2) : (i + 1);//三目运算符
+    }
     return false;
 }
 ```
@@ -61,4 +61,7 @@ bool isOneBitCharacter(int* bits, int bitsSize) {
 4.总结
 -----
 
-认真理解题目！！！！
+（1）认真理解题目！！！！<br>
+（2）关于三目运算符<br>
+对于条件表达式b ? x : y，先计算条件b，然后进行判断。如果b的值为true，计算x的值，运算结果为x的值；否则，计算y的值，运算结果为y的值。一个条件表达式绝不会既计算x，又计算y。条件运算符是右结合的，也就是说，从右向左分组计算。例如，a ? b : c ? d : e将按a ? b : (c ? d : e)执行<br>
+注意：在C语言中，x与y的类型相同。
