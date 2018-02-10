@@ -34,13 +34,8 @@ int strStr(char* haystack, char* needle) {
     return -1;
 }
 ```
-4.代码II
-------
 
-```c
-```
-
-5.总结
+4.总结
 -----
 
 关于strncmp函数<br>
